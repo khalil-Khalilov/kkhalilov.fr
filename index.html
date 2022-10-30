@@ -24,15 +24,7 @@
         <title>kkhalilov.fr</title>
     </head>
 
-    <!-- Verify (if) user -> has connected in GOOGLE account -->
-    <img id="verifyAccountGoogle" onload="show_login_status('Google', true)"
-        onerror="show_login_status('Google', false)"
-        src="https://accounts.google.com/CheckCookie?continue=https%3A%2F%2Fwww.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&followup=https%3A%2F%2F
-www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneHtml&checkedDomains=youtube&checkConnection=youtube%3A291%3A1" />
-
-
     <body>
-
         <!-- Loader Bar -->
         <div id="loader_bg">
             <div id="loader_animation">
@@ -51,7 +43,7 @@ www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneH
                 <li id="hamburger">
                     <i class="fas fa-bars"></i>
                 </li>
-                <li id="times" class="pidor">
+                <li id="times" class="hide_element">
                     <i class="fas fa-times"></i>
                 </li>
 
@@ -69,10 +61,7 @@ www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneH
                 <h3>Développeur WEB</h3>
 
                 <ul id="contacts">
-                    <li> <a id="copyMail" href="https://mail.google.com" target="_blanck"><i
-                                class="fas fa-envelope"></i>dev.kkhalilov@gmail.com</a></li>
-                    <li> <a id="copyNumber" href="tel:+33629121192"><i class="fas fa-phone-alt"></i>+33 06 28 03 94
-                            02</a></li>
+                    <li> <a id="copyMail" href="https://mail.google.com" target="_blanck"><i class="fas fa-envelope"></i>dev.kkhalilov@gmail.com</a></li>
                 </ul>
 
             </div>
@@ -103,10 +92,9 @@ www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneH
                     J'ai une expérience dans la conception, la construction et la personnalisation des sites Web.
                 </p>
 
-
                 <h3>Je maîtrise les technologies comme :</h3>
 
-                <ul id="compéténce">
+                <ul id="competence">
                     <li><span>HTML</span></li>
                     <li><span>CSS</span></li>
                     <li><span>PHP</span></li>
@@ -120,11 +108,8 @@ www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneH
                     <!--<li><span>WORDPRESS</span></li>-->
                 </ul>
 
-                <a href="media/img/cv_khalilov.pdf" target="_blanck" id="btn-cv"> Voir CV <i class="fas fa-address-card"
-                        id="cv-icon"></i></a>
-
+                <a href="media/img/cv_khalilov.pdf" target="_blanck" id="btn-cv"> Voir CV <i class="fas fa-address-card" id="cv-icon"></i></a>
             </div>
-
         </div>
 
         <!-- Portfolio  -->
@@ -135,7 +120,7 @@ www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneH
             <div class="cards">
 
                 <!-- Card  -->
-                <div class="card card2 wow animate__animated animate__fadeInLeft">
+                <div class="card  wow animate__animated animate__fadeInLeft">
                     <div class="card-image">
                         <img src="media/img/preview_fairy_forest.png" alt="preview image">
                     </div>
@@ -145,8 +130,8 @@ www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneH
 
                         <p>Le projet a été realisé en une semaine.</p>
 
-                        <p> Les outils de création utilisée:</p>
-                        <ul>
+                        <p> Les outils de création utilisée :</p>
+                        <ul class="when_more_tools">
                             <li>HTML/CSS</li>
                             <li>JavaScript</li>
                             <li>GSAP library</li>
@@ -159,7 +144,7 @@ www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneH
                 </div>
 
                 <!-- Card  -->
-                <div class="card card1 wow animate__animated animate__fadeInUp">
+                <div class="card  wow animate__animated animate__fadeInUp">
                     <div class="card-image">
                         <img src="media/img/preview_coffee-shop.png" alt="preview image">
                     </div>
@@ -181,7 +166,7 @@ www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneH
                 </div>
 
                 <!-- Card  -->
-                <div class="card card3 wow animate__animated animate__fadeInRight">
+                <div class="card  wow animate__animated animate__fadeInRight">
                     <div class="card-image">
                         <img src="media/img/preview_agence-voyage.png" alt="preview image">
                     </div>
@@ -199,15 +184,11 @@ www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneH
                             <li>Google Fonts</li>
                         </ul>
 
-                        <a href="works/agence_voyage/index.html" id="btn-visit_website" target="_blank">Visit
-                            Website</a>
+                        <a href="works/agence_voyage/index.html" id="btn-visit_website" target="_blank">Visit Website</a>
                     </div>
                 </div>
-
-
             </div>
         </div>
-
     </body>
 
     <script src="app.js"></script>
