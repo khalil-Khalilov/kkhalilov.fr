@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins:wght@600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+/*
+font-family: 'Architects Daughter', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* ------------------ CSS GLOBAL ------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+ 
+
+
+
+
+#inconstruction{
+    color:red;
+}
+
+html{
+    background-color: #100e17;
+    color: #fff;
+}
+
+#verifyAccountGoogle{
+    display: none;
+}
+
+/* ------------------ NAVBAR ------------------*/
+
+nav{
+    padding: 10px;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    transition: background-color, .5s;
+}
+
+
+.hover-item:hover{
+    transform: scale(1.2);
+}
+
+.hover-item{
+    transition: transform, 1s;
+}
+
+
+nav a{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    transition: color, .5s;
+}
+
+nav a:hover{
+    color: #0bceaf; 
+}
+
+#logo{
+    order: 1;
+}
+
+#logo span{
+    color: #0bceaf; 
+}
+
+.logo-style{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 22px;
+    color: #a5a4a4;
+}
+
+.pidor{
+    display: none;
+}
+
+#menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#hamburger{
+    color: white;
+    font-size: 24px;
+    order:2;
+    cursor: pointer;
+}
+
+#times{
+    color: white;
+    font-size: 24px;
+    order:2;
+    cursor: pointer;
+}
+
+.item{
+    display: none;
+    width: 100%;
+    text-align: center;
+    order:4;
+    padding: 15px 0px;
+}
+
+.item.active{
+    display:block;
+}
+
+.navbarInScroll{
+    background-color:#202026;  /* Change la couleur du background-color pendant le scroll */
+}
+
+
+/* ------------------ INTRODUCTION ------------------*/
+
+#container-introduction{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#hello{
+    border-radius: 20px 0px 20px 0px;
+    background-color: #0bceaf;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 156px;
+}
+
+
+#introduction ul{
+    list-style: none;
+    color: #fff;
+}
+
+
+#introduction h2{
+    font-size: 60px;
+    line-height: 65px;
+    margin-top: 10px;
+}
+
+
+#introduction h3{
+    margin: 5px 0px 40px 0px;
+    font-size: 25px;
+}
+
+
+#introduction a{
+     color: #fff; 
+}
+
+
+#introduction li{
+    margin-bottom: 15px;
+}
+
+a i{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#profile-img{
+    width: 27em;
+}
+
+
+
+/* ------------------ About Me ------------------*/
+
+
+#container-about-me{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#site-web-sur-mesure {
+    width: 45em;
+}
+
+#inner-about-me{
+    /* border:1px solid burlywood; */    
+    max-width: 530px;
+    width: 35%;
+}
+
+#inner-about-me h2{
+    font-size: 32px; 
+    margin-bottom: 20px; 
+    margin-top: 20px;           
+}
+
+#inner-about-me h3{
+    font-size: 20px; 
+    margin-bottom: 5px;         
+}
+
+#inner-about-me p{
+    margin-bottom: 41px; 
+    font-size: 16px;;           
+}
+
+
+#btn-cv{
+    background-color: #1e7768;
+    color: #fff;
+    padding: 8px 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align:center;
+
+
+    transition: background-color 0.8s ease;
+}
+
+#btn-cv:hover{
+    background-color: #0bceaf;
+}
+
+#cv-icon{
+    padding-left: 15px;
+    width: 15px;
+}
+
+#competence {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+#competence li{
+    margin-right:15px;
+    margin-bottom: 10px;
+    padding: 4px 0px;
+}
+
+#competence span{
+    border: 1px solid #19685b;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#competence span:hover{
+    border: 1px solid #6ef7e0;
+}
+
+/* ------------------ Compétences ------------------*/
+
+#container-competence{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+
+#wrapper{
+    width: 100%;
+    min-height: 50vh;
+    background-color: blue;
+
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+
+.inner-wrapper{
+    width: 40%;
+    background-color: green;
+
+    display: flex;
+    justify-content: center;
+}
+
+ 
+
+
+/* ------------------ Portfolio ------------------ */
+
+#portfolio{
+    font-size: 3rem;
+    margin: 2em 0em 1em 0em;
+}
+
+#container-works{ 
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.cards{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    width: 20em;
+    margin-bottom: 5em;
+}
+
+
+.cards .card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+
+.card-image img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-image{
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card a{
+    color:white;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.card #btn-visit_website{
+    background-color: #1e7768;
+    color: #fff;
+    border: none;
+    padding: 8px 30px;
+    margin: 2em 0em 1em 0em;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.8s ease;
+}
+
+.card #btn-visit_website:hover{
+    background-color: #0bceaf;
+}
+
+.card-image:after{
+    content:"";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.card1>.card-image:after{
+    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+}
+
+.card2>.card-image:after{
+    
+    background-image: linear-gradient(135deg, #0100ec, #fb36f4);
+}
+
+.card3>.card-image:after{
+    background-image: linear-gradient(135deg, #ffab1d, #f8501c);
+}
+
+.card6>.card-image:after{
+    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+}
+
+.card5>.card-image:after{
+    
+    background-image: linear-gradient(135deg,  #edc3b0, #7219e7);
+    
+}
+
+.card4>.card-image:after{
+    background-image: linear-gradient(135deg, #1ef029, #50a318);
+}
+
+
+.card .details{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.details li {
+    margin-top: 1rem;
+}
+
+.card .details>h3{
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+}
+
+.card .details>p{
+    color:#a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+
+:root {
+    --animate-duration: 1.9s;
+    --animate-delay: 1.5s;
+} 
+
+
+
+
+
+/* ------------------ MEDIA QUERIES ------------------*/
+
+
+/* Все изменения ДО 767пх */
+@media screen and (max-width: 767px){
+
+    nav{
+        background-color:#202026; 
+    }
+
+    #my_photo{
+        display: none;
+    }
+
+    #container-about-me{
+        height: 100vh;
+    }
+
+    #site-web-sur-mesure{
+        display: none;
+    }
+    
+    #inner-about-me{
+        width: 70%;
+    }
+
+    #introduction h2 {
+        font-size: 47px;
+    }
+
+    #introduction h3 { 
+        font-size: 30px; 
+    }
+
+    #contacts{
+        font-size: 24px;
+    }
+
+}
+
+/* Все изменения ТОЛЬКО для 768пх */
+@media only screen and (width: 768px){
+
+    nav{
+        background-color:#202026; 
+    }
+
+    #container-introduction {
+        flex-direction: column;
+    }
+
+    #container-about-me{
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #inner-about-me{
+        margin-top: 5em;
+        width: 61%;
+    }
+
+    #introduction{
+        font-size: 2em;
+    }
+
+    #introduction h3{
+        font-size: 30px;
+    }
+
+    #inner-about-me h2 {
+        font-size: 3em;
+    }
+
+    
+    #inner-about-me p {
+        font-size: 1.8em;
+    }
+
+    #inner-about-me h3 {
+        font-size: 1.7em;
+        margin-bottom: 15px;
+    }
+
+    #competence {
+        font-size: 1.4em;
+    }
+
+    #btn-cv {
+        font-size: 1.5em;
+    }
+    
+
+
+}
+
+/* Все изменения ПОСЛЕ 991пх */
+@media screen and (min-width: 991px){
+
+    #hamburger{
+        display: none;
+    }
+
+    .item{
+        display: block;
+        width: 100px;
+    }
+
+    #logo{
+        order:1;
+        flex-grow: 1;
+    }
+
+    .item{
+        order:2;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* ------------------ LOADER ------------------*/
+
+#loader_bg{
+    position: fixed;
+    z-index: 999;
+     background-color: #1B1B1D;  /*Loader 4 */
+
+     
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prostak{
+    color:red;
+}
+
+#lool{
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#rohan{
+    width: 900px;
+    margin: auto;
+    border: white 1px solid;
+    padding: 1em;
+}

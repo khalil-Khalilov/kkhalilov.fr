@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Integration du jQUERY par CDN -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+        <!-- Integration du FONT AWESOME par CDN -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous" />
+
+        <!-- Integration du Animate.CSS par CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+        <!-- Integration de fichier CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <title>kkhalilov.fr</title>
+    </head>
+
+    <!-- Verify (if) user -> has connected in GOOGLE account -->
+    <img id="verifyAccountGoogle" onload="show_login_status('Google', true)"
+        onerror="show_login_status('Google', false)"
+        src="https://accounts.google.com/CheckCookie?continue=https%3A%2F%2Fwww.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&followup=https%3A%2F%2F
+www.google.com%2Fintl%2Fen%2Fimages%2Flogos%2Faccounts_logo.png&chtml=LoginDoneHtml&checkedDomains=youtube&checkConnection=youtube%3A291%3A1" />
+
+
+    <body>
+
+        <!-- Loader Bar -->
+        <div id="loader_bg">
+            <div id="loader_animation">
+                <img src="media/img/loader.gif">
+            </div>
+        </div>
+
+
+        <!-- MENU -->
+        <nav>
+            <ul id="menu">
+                <li id="logo"><a class="logo-style" href="#loader_bg"><span class="logo-style">K</span>KHALILOV</a></li>
+                <li class="item hover-item"><a href="#loader_bg">Home</a></li>
+                <li class="item hover-item"><a href="#container-about-me">About</a></li>
+                <li class="item hover-item"><a href="#container-works">My Works</a></li>
+                <li id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </li>
+                <li id="times" class="pidor">
+                    <i class="fas fa-times"></i>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Introduction  -->
+        <div id="container-introduction">
+            <div id="introduction">
+
+                <p id="hello">Hello, I'm</p>
+
+                <h2>Khalilov Khalil</h2>
+
+                <h3>Développeur WEB</h3>
+
+                <ul id="contacts">
+                    <li> <a id="copyMail" href="https://mail.google.com" target="_blanck"><i
+                                class="fas fa-envelope"></i>dev.kkhalilov@gmail.com</a></li>
+                    <li> <a id="copyNumber" href="tel:+33629121192"><i class="fas fa-phone-alt"></i>+33 06 28 03 94
+                            02</a></li>
+                </ul>
+
+            </div>
+
+
+            <div id="my_photo">
+                <div><img src="media/img/web-developer-master-tn.svg" id="profile-img" alt="image de profile" /></div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- About Me  -->
+        <div id="container-about-me">
+
+            <div class="wow animate__animated animate__fadeInLeft">
+                <div><img src="media/img/site-web-sur-mesure.png" id="site-web-sur-mesure" alt="image" /></div>
+            </div>
+
+            <div id="inner-about-me">
+
+                <h2>À propos de moi</h2>
+
+                <p>
+                    Je m'appelle Khalil, je suis jeune développeur web basé à Strasbourg.
+                    J'ai une expérience dans la conception, la construction et la personnalisation des sites Web.
+                </p>
+
+
+                <h3>Je maîtrise les technologies comme :</h3>
+
+                <ul id="compéténce">
+                    <li><span>HTML</span></li>
+                    <li><span>CSS</span></li>
+                    <li><span>PHP</span></li>
+                    <li><span>POO</span></li>
+                    <li><span>SQL</span></li>
+                    <!--<li><span>symfony</span></li>-->
+                    <li><span>javascript</span></li>
+                    <li><span>JQUERY</span></li>
+                    <li><span>BOOTSTRAP</span></li>
+                    <li><span>github</span></li>
+                    <!--<li><span>WORDPRESS</span></li>-->
+                </ul>
+
+                <a href="media/img/cv_khalilov.pdf" target="_blanck" id="btn-cv"> Voir CV <i class="fas fa-address-card"
+                        id="cv-icon"></i></a>
+
+            </div>
+
+        </div>
+
+        <!-- Portfolio  -->
+        <div id="container-works">
+
+            <h2 id="portfolio">My Works</h2>
+
+            <div class="cards">
+
+                <!-- Card  -->
+                <div class="card card2 wow animate__animated animate__fadeInLeft">
+                    <div class="card-image">
+                        <img src="media/img/preview_fairy_forest.png" alt="preview image">
+                    </div>
+
+                    <div class="details">
+                        <h3>Fairy Forest</h3>
+
+                        <p>Le projet a été realisé en une semaine.</p>
+
+                        <p> Les outils de création utilisée:</p>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>GSAP library</li>
+                            <li>ScrollSmoother</li>
+                            <li>ScrollTrigger</li>
+                        </ul>
+
+                        <a href="works/fairy forest/index.html" id="btn-visit_website" target="_blank">Visit Website</a>
+                    </div>
+                </div>
+
+                <!-- Card  -->
+                <div class="card card1 wow animate__animated animate__fadeInUp">
+                    <div class="card-image">
+                        <img src="media/img/preview_coffee-shop.png" alt="preview image">
+                    </div>
+
+                    <div class="details">
+                        <h3>Divi Coffee House</h3>
+
+                        <p>Le projet a été realisé en 4 jours.</p>
+
+                        <p> Les outils de création utilisée:</p>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>Font Awesome</li>
+                            <li>Google Fonts</li>
+                        </ul>
+
+                        <a href="works/coffee_shop/index.html" id="btn-visit_website" target="_blank">Visit Website</a>
+                    </div>
+                </div>
+
+                <!-- Card  -->
+                <div class="card card3 wow animate__animated animate__fadeInRight">
+                    <div class="card-image">
+                        <img src="media/img/preview_agence-voyage.png" alt="preview image">
+                    </div>
+
+                    <div class="details">
+                        <h3>Agence De Voyage</h3>
+
+                        <p>Le projet a été realisé en 4 jours.</p>
+
+                        <p> Les outils de création utilisée:</p>
+                        
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>Font Awesome</li>
+                            <li>Google Fonts</li>
+                        </ul>
+
+                        <a href="works/agence_voyage/index.html" id="btn-visit_website" target="_blank">Visit
+                            Website</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </body>
+
+    <script src="app.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</html>
