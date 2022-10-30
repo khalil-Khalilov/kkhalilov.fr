@@ -11,7 +11,6 @@
         $('#times').removeClass('hide_element');
         $('#hamburger').addClass('hide_element');
         $('.item').addClass('active');
-        $('.item').addClass('animate__animated animate__fadeInUp');
     })
 
     $('#times').on('click', function() {
@@ -30,9 +29,7 @@
         }
         else {
             $('.item').addClass('active');
-            $('.item').addClass('animate__animated animate__fadeInUp');
-
-            $('#times').removeClass('hide_element');
+            
             $('#hamburger').addClass('hide_element');
         }
     })
