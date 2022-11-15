@@ -3,7 +3,7 @@
     //  Loader Bar execution time
     setTimeout(function(){
         $('#loader_bg').fadeToggle();
-    }, 4); // 4500
+    }, 4500); // 4500
 
     //Responsive NavBar
     $('#hamburger').on('click', function() {
