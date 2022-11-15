@@ -1,38 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins:wght@600&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Montserrat&family=Poppins:wght@400;700&display=swap');
 
 /*
-font-family: 'Architects Daughter', cursive;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
+font-family: 'Arvo', serif;             <= for text
+font-family: 'Montserrat', sans-serif;  <= for title
+font-family: 'Poppins', sans-serif;     <= for buttons
 */
 
 /* ------------------ CSS GLOBAL ------------------*/
+
+:root {
+    --animate-duration: 1.9s;
+    --animate-delay: 1.5s;
+} 
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style-type: none;
 }
  
-
-
-
-
-#inconstruction{
-    color:red;
-}
-
 html{
     background-color: #100e17;
     color: #fff;
 }
 
-#verifyAccountGoogle{
-    display: none;
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
 }
+
+p{
+    font-family: 'Arvo', serif;
+}
+
+/* ------------------ LOADER ------------------*/
+
+#loader_bg{
+    position: fixed;
+    z-index: 999;
+     background-color: #1B1B1D;  /*Loader 4 */
+
+     
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* ------------------ NAVBAR ------------------*/
 
@@ -44,24 +62,21 @@ nav{
     transition: background-color, .5s;
 }
 
+.hover-item{
+    transition: transform, 1s;
+}
 
 .hover-item:hover{
     transform: scale(1.2);
 }
 
-.hover-item{
-    transition: transform, 1s;
-}
-
-
 nav a{
     color:white;
-    font-family: 'Poppins', sans-serif;
     transition: color, .5s;
 }
 
 nav a:hover{
-    color: #0bceaf; 
+    color: #0bceaf;
 }
 
 #logo{
@@ -73,21 +88,21 @@ nav a:hover{
 }
 
 .logo-style{
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Arvo', serif;
     font-size: 22px;
     color: #a5a4a4;
 }
 
-.pidor{
+.hide_element{
     display: none;
 }
 
 #menu{
-    list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-right: 1rem;
 }
 
 #hamburger{
@@ -105,6 +120,8 @@ nav a:hover{
 }
 
 .item{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     display: none;
     width: 100%;
     text-align: center;
@@ -138,7 +155,7 @@ nav a:hover{
     padding: 10px 30px;
     font-weight: bold;
     font-size: 20px;
-    width: 156px;
+    width: 12rem;
 }
 
 
@@ -162,7 +179,8 @@ nav a:hover{
 
 
 #introduction a{
-     color: #fff; 
+    color: #fff; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -193,11 +211,10 @@ a i{
 }
 
 #site-web-sur-mesure {
-    width: 45em;
+    width: 100%;
 }
 
-#inner-about-me{
-    /* border:1px solid burlywood; */    
+#inner-about-me{    
     max-width: 530px;
     width: 35%;
 }
@@ -210,24 +227,24 @@ a i{
 
 #inner-about-me h3{
     font-size: 20px; 
-    margin-bottom: 5px;         
+    margin-bottom: 1rem;         
 }
 
 #inner-about-me p{
-    margin-bottom: 41px; 
-    font-size: 16px;;           
-}
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}        
 
 
 #btn-cv{
     background-color: #1e7768;
     color: #fff;
     padding: 8px 30px;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     border-radius: 20px;
     text-align:center;
-
-
     transition: background-color 0.8s ease;
 }
 
@@ -255,52 +272,24 @@ a i{
 }
 
 #competence span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     border: 1px solid #19685b;
     padding: 4px 10px;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: default;
 }
 
 #competence span:hover{
     border: 1px solid #6ef7e0;
 }
 
-/* ------------------ Compétences ------------------*/
-
-#container-competence{
-    width: 100%;
-    height: 100vh;
-    background-color: red;
-}
-
-
-#wrapper{
-    width: 100%;
-    min-height: 50vh;
-    background-color: blue;
-
-    display:flex;
-    justify-content: space-around;
-    
-}
-
-
-.inner-wrapper{
-    width: 40%;
-    background-color: green;
-
-    display: flex;
-    justify-content: center;
-}
-
- 
-
 
 /* ------------------ Portfolio ------------------ */
 
 #portfolio{
     font-size: 3rem;
-    margin: 2em 0em 1em 0em;
+    margin-bottom: 2em;
 }
 
 #container-works{ 
@@ -345,21 +334,23 @@ a i{
     color:white;
     font-size: 13px;
     text-transform: uppercase;
+    letter-spacing: .1rem;
 }
 
-.card #btn-visit_website{
+.btn-visit_website{
     background-color: #1e7768;
     color: #fff;
     border: none;
     padding: 8px 30px;
     margin: 2em 0em 1em 0em;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     border-radius: 20px;
     text-align: center;
     transition: background-color 0.8s ease;
 }
 
-.card #btn-visit_website:hover{
+.btn-visit_website:hover{
     background-color: #0bceaf;
 }
 
@@ -374,33 +365,6 @@ a i{
     opacity: 0.7;
 }
 
-.card1>.card-image:after{
-    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
-}
-
-.card2>.card-image:after{
-    
-    background-image: linear-gradient(135deg, #0100ec, #fb36f4);
-}
-
-.card3>.card-image:after{
-    background-image: linear-gradient(135deg, #ffab1d, #f8501c);
-}
-
-.card6>.card-image:after{
-    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
-}
-
-.card5>.card-image:after{
-    
-    background-image: linear-gradient(135deg,  #edc3b0, #7219e7);
-    
-}
-
-.card4>.card-image:after{
-    background-image: linear-gradient(135deg, #1ef029, #50a318);
-}
-
 
 .card .details{
     padding: 20px 10px;
@@ -409,13 +373,23 @@ a i{
     align-items: baseline;
 }
 
+.when_more_tools{
+    display: grid;
+    grid-template-columns: 120px auto;
+}
+
+.details ul{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
 .details li {
     margin-top: 1rem;
 }
 
 .card .details>h3{
     color:white;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
     margin: 10px 0 15px 0;
 }
@@ -423,19 +397,9 @@ a i{
 .card .details>p{
     color:#a0a0a0;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 40px;
     font-weight: 400;
 }
-
-
-:root {
-    --animate-duration: 1.9s;
-    --animate-delay: 1.5s;
-} 
-
-
-
-
 
 /* ------------------ MEDIA QUERIES ------------------*/
 
@@ -560,52 +524,3 @@ a i{
 
 
 
-
-
-
-/* ------------------ LOADER ------------------*/
-
-#loader_bg{
-    position: fixed;
-    z-index: 999;
-     background-color: #1B1B1D;  /*Loader 4 */
-
-     
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#prostak{
-    color:red;
-}
-
-#lool{
-    color:red;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#rohan{
-    width: 900px;
-    margin: auto;
-    border: white 1px solid;
-    padding: 1em;
-}
